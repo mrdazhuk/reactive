@@ -11,10 +11,20 @@
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/black" />
 
+    <Button
+        android:id="@+id/btDo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSearch"
+        android:text="Do something" />
+
     <ListView
         android:id="@+id/lvFoundResults"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/etSearch" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btDo" />
+
+
 </RelativeLayout>

@@ -16,5 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data android:name="roboguice.modules"
+            android:value="com.example.yuriydazhuk.rxexample.BindingModule" />
     </application>
 </manifest>

@@ -11,7 +11,9 @@ import android.widget.Toast;
 
 import com.example.yuriydazhuk.rxexample.api.ApiSearch;
 import com.example.yuriydazhuk.rxexample.api.SearchResponse;
+import com.example.yuriydazhuk.rxexample.view.results.ExampleViewInject;
 import com.example.yuriydazhuk.rxexample.view.results.SearchResultsAdapter;
+import com.google.inject.Inject;
 
 import java.util.concurrent.TimeUnit;
 
@@ -37,6 +39,13 @@ public class MainActivity extends RoboActivity {
 
     @InjectView(R.id.btDo)
     private Button btDo;
+
+    @Inject
+    private Bindable bindable;
+
+    @InjectView(R.id.view)
+    private ExampleViewInject exampleViewInject;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
